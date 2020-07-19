@@ -63,6 +63,7 @@
 				timeInterval = setInterval(updateClock, 1000);
 			}
 			start.innerHTML = 'START';
+			days_input.focus();
 		}
 	};
 
@@ -128,6 +129,13 @@
 	};
 
 	start.addEventListener('click', initializeClock);
+	document.addEventListener('keypress', function (event) {
+		// event variable hold the key pressed
+		if (event.keyCode === 13 || event.which === 13) {
+			//event.which for older browsers
+			initializeClock();
+		}
+	});
 	pause.addEventListener('click', pauseFunc);
 	stop.addEventListener('click', stopFunc);
 })();
