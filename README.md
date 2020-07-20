@@ -2,6 +2,8 @@
 
 Simple Countdown Clock
 
+![Countdown Clock](/Images/countdown__clock.jpg)
+
 Installation
 -------
 
